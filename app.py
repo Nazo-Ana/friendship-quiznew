@@ -27,7 +27,8 @@ for i, q in enumerate(questions):
     answer = st.radio(
         f"Q{i+1}: {q['q']}",
         ["True", "False"],
-        key=i
+        key=i,
+        index= None
     )
 
     if answer == "True":
